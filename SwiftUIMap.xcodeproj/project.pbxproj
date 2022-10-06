@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A04E7A4428EED77100AF8E69 /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04E7A4328EED77100AF8E69 /* LocationPreviewView.swift */; };
 		A0F7E9EF28EADFE700C62C35 /* SwiftUIMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F7E9EE28EADFE700C62C35 /* SwiftUIMapApp.swift */; };
 		A0F7E9F128EADFE700C62C35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F7E9F028EADFE700C62C35 /* ContentView.swift */; };
 		A0F7E9F328EADFE900C62C35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0F7E9F228EADFE900C62C35 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A04E7A4328EED77100AF8E69 /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
 		A0F7E9EB28EADFE700C62C35 /* SwiftUIMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0F7E9EE28EADFE700C62C35 /* SwiftUIMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMapApp.swift; sourceTree = "<group>"; };
 		A0F7E9F028EADFE700C62C35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				A0F7EA0D28EB03DC00C62C35 /* LocationListView.swift */,
+				A04E7A4328EED77100AF8E69 /* LocationPreviewView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				A0F7EA0E28EB03DC00C62C35 /* LocationListView.swift in Sources */,
 				A0F7EA0828EAF38200C62C35 /* LocationsViewModel.swift in Sources */,
 				A0F7E9F128EADFE700C62C35 /* ContentView.swift in Sources */,
+				A04E7A4428EED77100AF8E69 /* LocationPreviewView.swift in Sources */,
 				A0F7EA0628EAEF9C00C62C35 /* LocationView.swift in Sources */,
 				A0F7EA0028EAE14A00C62C35 /* Location.swift in Sources */,
 				A0F7EA0B28EB009E00C62C35 /* ExtensionOfLocationView.swift in Sources */,

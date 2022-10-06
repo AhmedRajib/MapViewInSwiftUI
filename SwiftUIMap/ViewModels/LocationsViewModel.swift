@@ -25,7 +25,7 @@ class LocationViewModel: ObservableObject {
     let mapSpan = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
     
      // MARK: - show locations
-    @Published var showLocationsList: Bool = true
+    @Published var showLocationsList: Bool = false
     
     // MARK: -
     init() {
@@ -54,5 +54,30 @@ class LocationViewModel: ObservableObject {
             mapLocation = location
             showLocationsList = false
         }
+    }
+    
+    func nextButtonPressed() {
+        
+        
+        // get Current Index
+        
+        guard let currentIndex = locations.firstIndex(where: { $0 == mapLocation }) else {
+            print("Cound not find current index in locations array! SHould never happen.")
+            return
+        }
+        
+        // check if the current index is valid
+        let nextIndex = currentIndex + 1
+        guard locations.indices.contains(nextIndex) else {
+            // next index is not valid
+            // Restart from 0
+            
+            guard let firstLocatoin = locations.first else  { return }
+            showNextLocation(location: firstLocatoin)
+            return
+        }
+        // next index is valid
+        let nextLocation = locations[nextIndex]
+        showNextLocation(location: nextLocation)
     }
 }
